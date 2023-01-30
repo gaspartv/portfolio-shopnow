@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Lista de Produtos</title>
+    <script src="./src/js/dataProdutos.js"></script>
+    <script defer src="./src/js/script.js"></script>
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <h1>Shop now</h1>
+      <nav class="menu containerMax">
+        <div class="menu__div" id="botoesContainer">
+          <button class="menu__button menu__button--hover" title="Todos Produtos">
+            Todos Produtos
+          </button>
+          <button class="menu__button menu__button--hover" title="Hortifruti">
+            Hortifruti
+          </button>
+          <button class="menu__button menu__button--hover" title="Panificadora">
+            Panificadora
+          </button>
+          <button class="menu__button menu__button--hover" title="Laticínio">
+            Laticínios
+          </button>
+        </div>
+
+        <div class="pesquisa">
+          <input class="pesquisa--buscar" type="text" placeholder="Pesquisar por"/>
+          <button>
+            <img src="./src/img/search.png" alt="pesquisar" />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- PARTE PRINCIPAL -->
+    <main>
+      <!-- CONTAINER DE PRODUTOS -->
+      <section class="vitrine containerMax">
+        <div class="carrinho">
+          <p><img src="./src/img/carrinho.png"> Carrinho</p>
+          <ul id="carrinho"></ul>
+          <div id="hidden" class="hidden">
+            <p class="carrinho__quantidade"><span>Quantidade</span> <span id="quantidadeHTML"></span></p>
+            <p class="carrinho__total"><span>Total</span> <span id="totalHTML"></span></p>
+          </div>
+        </div>
+        <div class="listaProdutos">
+          <ul id="vitrineHTML">
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
